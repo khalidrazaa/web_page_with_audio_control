@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML 5 audio & video tag</title>
+		<meta charset="utf-8">
+		<meta name="HTML 5 Tag" content="audio and video tag">
+		<style>
+			*{
+				box-sizing:border-box;
+				margin:0;
+			}
+			#contain{
+				background-color:lightblue;
+				height:100vh;
+				margin:auto;
+				display:table;
+				border:1px solid red;
+				
+			}
+			section{
+				float:left;
+				padding:10px;
+				width:400px;
+				height:500px;
+				border:1px solid red;
+			}
+			.av{
+				width:300px;
+				height:400px;
+				margin-left:40px;
+			}
+			audio{
+				background-image:url(poster.jpg);
+				background-size:300px 400px;
+				background-repeat:no-repeat;
+			}
+			video[poster] {
+				background-color:black;
+			}
+			h1,h3{
+				padding:10px;
+				margin-left:40px;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="contain">
+			<h1>Play Audio & video on webpage</h1>
+			<section>
+				<h3>Play Music : Manike Maghe hite</h3>
+				<audio class="av" controls>
+					<source src="Manike.mp3">
+					Please consider updating your browser, Audio is not supported.
+				</audio>
+			</section>
+			<section>
+				<h3>Play video : Manike Maghe hite</h3>
+				<video class="av" controls poster="poster.jpg">
+					<source src="manike.mp4">
+					Please consider updating your browser, Audio is not supported.
+				</video>
+			</section>
+		</div>
+	</body>	
+</html>
